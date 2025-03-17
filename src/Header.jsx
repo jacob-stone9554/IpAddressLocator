@@ -1,13 +1,18 @@
 import './Header.css'
+import useState from "react";
 
 
 function Header () {
+
+
     return (
         <header>
             <h1>IP Address Tracker</h1>
             <form>
                 <input type={"text"} name={"ipAddress"} placeholder={"Search for any IP address or domain"} />
-                <button type={"submit"} onClick={() => {}}><img src={"src/assets/icon-arrow.svg"}/></button>
+                <button type={"submit"} onClick={() => {
+                    alert("Submited");
+                }}><img src={"src/assets/icon-arrow.svg"}/></button>
             </form>
             <div className={"results"}>
                 <ul>

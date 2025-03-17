@@ -21,6 +21,7 @@ header form {
   width: 20%;
 }
 header form input {
+  padding-left: 25px;
   height: 58px;
   width: 90%;
   border: none;
@@ -30,8 +31,8 @@ header form input {
 header form input:active {
   border: none;
 }
-header form input::placeholder {
-  padding-left: 25px;
+header form input:focus {
+  outline: none;
 }
 header form button {
   height: 58px;

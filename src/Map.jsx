@@ -15,9 +15,10 @@ function Map () {
        mapInstance.current = L.map(mapRef.current, {
            zoomControl: false,
            attributionControl: false
-       }).setView([51.05, -0.09], 13);
+       }).setView([40.67, -73.94], 13);
 
        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {}).addTo(mapInstance.current);
+       //https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png
 
         const DefaultIcon = L.icon({
             iconUrl: "src/assets/icon-location.svg",
