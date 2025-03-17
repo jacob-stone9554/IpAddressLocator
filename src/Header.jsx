@@ -11,22 +11,25 @@ function Header () {
             </form>
             <div className={"results"}>
                 <ul>
-                    <div className={"result-group"}>
-                        <li>IP Address</li>
-                        <li>192.168.1.1</li>
-                    </div>
-                    <div className={"result-group"}>
-                        <li>Location</li>
-                        <li>Brooklyn, NY 10001</li>
-                    </div>
-                    <div className={"result-group"}>
-                        <li>Timezone</li>
-                        <li>UTC -05:00</li>
-                    </div>
-                    <div className={"result-group"}>
-                        <li>ISP</li>
-                        <li>SpaceX Starlink</li>
-                    </div>
+                    <li>
+                        <p className={"label"}>IP ADDRESS</p>
+                        <p className={"res"}>192.212.174.101</p>
+                    </li>
+                    <div className={"break"}/>
+                    <li>
+                        <p className={"label"}>LOCATION</p>
+                        <p className={"res"}>Brooklyn, NY 10001</p>
+                    </li>
+                    <div className={"break"}/>
+                    <li>
+                        <p className={"label"}>TIMEZONE</p>
+                        <p className={"res"}>UTC -05:00</p>
+                    </li>
+                    <div className={"break"}/>
+                    <li>
+                        <p className={"label"}>ISP</p>
+                        <p className={"res"}>SpaceX Starlink</p>
+                    </li>
                 </ul>
             </div>
         </header>

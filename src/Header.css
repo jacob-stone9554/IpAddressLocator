@@ -2,13 +2,22 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   border: 1px solid blue;
   background-color: lightskyblue;
+  background-image: url("src/assets/pattern-bg-desktop.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   height: 30%;
   width: 100%;
+  overflow: visible;
+}
+header h1 {
+  margin-top: 50px;
+  color: white;
 }
 header form {
+  margin-top: 50px;
   width: 20%;
 }
 header form input {
@@ -16,9 +25,13 @@ header form input {
   width: 90%;
   border: none;
   border-radius: 15px 0 0 15px;
+  font-size: 18px;
+}
+header form input:active {
+  border: none;
 }
 header form input::placeholder {
-  padding-left: 20px;
+  padding-left: 25px;
 }
 header form button {
   height: 58px;
@@ -27,6 +40,54 @@ header form button {
   background-color: black;
   color: white;
   border-radius: 0 15px 15px 0;
+}
+header .results {
+  position: absolute;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  margin-top: 10%;
+  width: 70%;
+  height: 161px;
+  z-index: 1000;
+  border-radius: 15px;
+}
+header .results ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+header .results ul .result-group {
+  display: flex;
+  flex-direction: column;
+}
+header .results ul .label {
+  color: lightgray;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+header .results ul .res {
+  font-size: 26px;
+  font-weight: 500;
+}
+header .results ul li {
+  margin-left: 100px;
+  width: 25%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+}
+header .results ul .break {
+  margin-right: 25px;
+  width: 2px;
+  height: 50%;
+  background-color: lightgray;
 }
 
 /*# sourceMappingURL=Header.css.map */
